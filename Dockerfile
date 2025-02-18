@@ -1,4 +1,4 @@
-FROM intelanalytics/ipex-llm-inference-cpp-xpu:2.2.0-SNAPSHOT@sha256:4c7f6cf6adf9544771037c7a5fcf4f2ae0d8c2fef2905e8a2d2229e16b6ac30f
+FROM intelanalytics/ipex-llm-inference-cpp-xpu:2.2.0-SNAPSHOT@sha256:21f970942b9621790807a869e5661f3b0df50865d9c07db870acca7fb3cf7539
 
 ENV \
   ZES_ENABLE_SYSMAN=1 \
