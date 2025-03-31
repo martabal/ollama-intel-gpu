@@ -1,4 +1,4 @@
-FROM intelanalytics/ipex-llm-inference-cpp-xpu:2.2.0-SNAPSHOT@sha256:570be754812f1eff0cf24792daac85303a0763e9526e2d7315825786e8a48793
+FROM intelanalytics/ipex-llm-inference-cpp-xpu:2.2.0-SNAPSHOT@sha256:3be7cd9c6b97fbbe65b406a5a3f765c89fc1c7add39620b05b1b09d07ba5c912
 
 ENV \
   OLLAMA_HOST=0.0.0.0:11434
