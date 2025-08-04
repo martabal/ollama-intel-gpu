@@ -3,14 +3,9 @@ FROM intelanalytics/ipex-llm-inference-cpp-xpu:2.3.0-SNAPSHOT@sha256:be3c8142f88
 ENV \
   OLLAMA_HOST=0.0.0.0:11434
 
-RUN \
-  mkdir -p /llm/ollama && \
-  cd /llm/ollama && \
-  init-ollama && \
-  ln -s \
-    /llm/ollama/ollama \
-    /usr/bin/ollama
+WORKDIR /usr/local/bin
 
-WORKDIR /llm/ollama
+RUN \
+  init-ollama
 
 ENTRYPOINT ["ollama", "serve"]
